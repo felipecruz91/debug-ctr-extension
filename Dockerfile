@@ -22,7 +22,7 @@ LABEL org.opencontainers.image.title="debug-ctr" \
     com.docker.extension.additional-urls="" \
     com.docker.extension.changelog=""
 
-ENV DEBUG_CTR_VERSION=0.1.0
+ENV DEBUG_CTR_VERSION=0.2.0
 RUN apk add curl
 RUN curl -LO "https://github.com/felipecruz91/debug-ctr/releases/download/v${DEBUG_CTR_VERSION}/debug-ctr_${DEBUG_CTR_VERSION}_darwin_${TARGETARCH}.tar.gz" \
     && tar -xvzf debug-ctr_${DEBUG_CTR_VERSION}_darwin_${TARGETARCH}.tar.gz \
